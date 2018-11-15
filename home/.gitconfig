@@ -1,0 +1,24 @@
+[alias]
+	find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
+	show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
+	gg = grep --heading --break -n
+	co = checkout
+	ci = commit
+[core]
+	autocrlf = false
+[color]
+	ui = auto
+[pack]
+	threads = 0
+[diff]
+	renamelimit = 0
+[push]
+        default = simple
+[mailmap]
+   file = ~/.mailmap
+
+[blame]
+	date = format:%Y-%m-%d
+
+[log]
+	date = iso8601
