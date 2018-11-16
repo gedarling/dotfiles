@@ -1,6 +1,7 @@
 export ZSH="/home/geoff/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+# blank since we are using pure instead of a oh-my-zsh theme
+ZSH_THEME=""
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -21,6 +22,10 @@ source $ZSH/oh-my-zsh.sh
 [[ -e $HOME/.local-env.sh ]] && source $HOME/.local-env.sh
 
 # User configuration
+
+fpath=( "$HOME/.zfunctions" $fpath )
+autoload -U promptinit; promptinit
+prompt pure
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:$PATH
 export VISUAL=vim
