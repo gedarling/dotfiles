@@ -52,6 +52,13 @@ HS=$HOME/.homesick/repos/homeshick/bin/homeshick
    $HS clone --batch git@github.com:wesQ3/dotfiles.git
 $HS link --force
 
+# pure prompt
+if [ ! -d $HOME/.pure ]; then
+   git clone https://github.com/sindresorhus/pure.git $HOME/.pure
+   ln -s "$PWD/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
+   ln -s "$PWD/async.zsh" "$HOME/.zfunctions/async"
+fi
+
 cd $HOME
 
 echo Setting local shell
