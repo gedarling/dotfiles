@@ -10,14 +10,14 @@ plugins=(
   git
 )
 
-# fuzzy find
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # homeshick command
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
+
+# fuzzy find
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [[ -e $HOME/.local-env.sh ]] && source $HOME/.local-env.sh
 
