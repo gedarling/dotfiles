@@ -27,7 +27,10 @@ fpath=( "$HOME/.zfunctions" $fpath )
 autoload -U promptinit; promptinit
 prompt pure
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:$PATH
+# use plenv
+export PATH="$HOME/.plenv/bin:$PATH"
+eval "$(plenv init -)"
+
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export TERM=xterm-256color
