@@ -6,8 +6,9 @@
 	ci = commit
 [core]
 	autocrlf = false
+	pager = /home/geoff/code/diff-so-fancy/diff-so-fancy | less --tabs=4 -RFX
 [color]
-	ui = auto
+	ui = true
 [pack]
 	threads = 0
 [diff]
@@ -22,3 +23,15 @@
 
 [log]
 	date = iso8601
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
