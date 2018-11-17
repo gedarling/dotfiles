@@ -65,4 +65,4 @@ fi
 cd $HOME
 
 echo Setting local shell
-chsh --shell /bin/zsh
+chsh --shell /usr/bin/zsh
