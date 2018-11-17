@@ -49,12 +49,13 @@ fi
 
 HS=$HOME/.homesick/repos/homeshick/bin/homeshick
 [ ! -d $HOME/.homesick/repos/dotfiles ] && \
-   $HS clone --batch git@github.com:wesQ3/dotfiles.git
+   $HS clone --batch git@github.com:gedarling/dotfiles.git
 $HS link --force
 
 # pure prompt
 if [ ! -d $HOME/.pure ]; then
    git clone https://github.com/sindresorhus/pure.git $HOME/.pure
+   mkdir $HOME/.zfunctions
    ln -s "$PWD/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
    ln -s "$PWD/async.zsh" "$HOME/.zfunctions/async"
 fi
