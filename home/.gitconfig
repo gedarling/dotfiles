@@ -25,9 +25,9 @@
 	date = iso8601
 [color "diff-highlight"]
 	oldNormal = red bold
-	oldHighlight = red bold 52
+	oldHighlight = white 22
 	newNormal = green bold
-	newHighlight = green bold 22
+	newHighlight = white 22
 [color "diff"]
 	meta = yellow
 	frag = magenta bold
