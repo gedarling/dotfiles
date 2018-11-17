@@ -56,8 +56,8 @@ $HS link --force
 if [ ! -d $HOME/.pure ]; then
    git clone https://github.com/sindresorhus/pure.git $HOME/.pure
    mkdir $HOME/.zfunctions
-   ln -s "$PWD/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
-   ln -s "$PWD/async.zsh" "$HOME/.zfunctions/async"
+   ln -s "$HOME/.pure/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
+   ln -s "$HOME/.pure/async.zsh" "$HOME/.zfunctions/async"
 fi
 
 cd $HOME
