@@ -43,7 +43,7 @@ set number
 
 colorscheme ir_black
 
-set guifont=Inconsolata-g\ for\ Powerline\ 11
+set guifont=Inconsolata-g\ for\ Powerline\ 10
 
 set undofile
 
