@@ -14,6 +14,7 @@ Plugin 'wesQ3/wombat.vim'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -43,7 +44,7 @@ set number
 
 colorscheme ir_black
 
-set guifont=Inconsolata\ 12
+set guifont=Inconsolata-g\ for\ Powerline\ 11
 
 set undofile
 
@@ -66,3 +67,5 @@ set smartcase
 inoremap jj <Esc>
 
 let g:syntastic_enable_perl_checker = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='wombat'
