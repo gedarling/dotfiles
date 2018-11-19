@@ -1,12 +1,11 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
-" let Vundle manage Vundle
-" required!
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
+
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-vividchalk'
 Plugin 'tomtom/tcomment_vim'
