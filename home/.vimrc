@@ -9,12 +9,13 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-vividchalk'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'wesQ3/wombat.vim'
+Plugin 'kaicataldo/material.vim'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
+Plugin 'vim-perl/vim-perl'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 
@@ -41,7 +42,11 @@ nnoremap <silent> <F5> :CtrlPBuffer<CR>
 
 set number
 
-colorscheme ir_black
+colorscheme material
+
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 set guifont=Inconsolata-g\ for\ Powerline\ 10
 
@@ -67,4 +72,4 @@ inoremap jj <Esc>
 
 let g:syntastic_enable_perl_checker = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='wombat'
+let g:airline_theme='material'
