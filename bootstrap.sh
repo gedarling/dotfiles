@@ -8,7 +8,8 @@ if ! dpkg -l | grep -q htop; then
    sudo apt-get upgrade
    sudo apt-get --no-install-recommends install \
       vim git zsh tmux \
-      curl mtr tree htop
+      curl mtr tree htop \
+      build-essential
 fi
 
 # generate keys
