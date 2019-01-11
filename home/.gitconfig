@@ -35,3 +35,6 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[user]
+	email = geoff@mitsi.com
+	name = Geoffrey Darling
