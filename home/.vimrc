@@ -49,6 +49,8 @@ if (has("termguicolors"))
 endif
 
 set guifont=Inconsolata-g\ for\ Powerline\ 10
+set guioptions-=T
+set guioptions-=r
 
 set undofile
 
