@@ -10,11 +10,6 @@ if [ ! -e $BACKUP_DIR ]; then
    exit 1
 fi
 
-if [ ! -e $IGNORELIST ]; then
-wget -q https://raw.githubusercontent.com/wesQ3/rsync-homedir-excludes/master/rsync-homedir-excludes.txt \
-   -O $IGNORELIST
-fi
-
 mkdir -p $BACKUP_DIR/home/$USER
 rsync -av -delete \
    --exclude-from=$IGNORELIST \
