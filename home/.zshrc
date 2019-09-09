@@ -34,3 +34,4 @@ eval "$(plenv init -)"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export TERM=xterm-256color
+export PATH="$HOME/.local/bin:$PATH"
