@@ -18,6 +18,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-perl/vim-perl'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'hashivim/vim-terraform'
 
 filetype plugin indent on     " required!
 
