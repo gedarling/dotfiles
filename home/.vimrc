@@ -78,3 +78,6 @@ set noeb vb t_vb=
 let g:syntastic_enable_perl_checker = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='material'
+
+let g:syntastic_python_python_exec = 'python3'
+let g:syntastic_python_checkers = ['python']
