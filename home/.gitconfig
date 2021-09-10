@@ -16,11 +16,13 @@
 [push]
         default = simple
 [mailmap]
-   file = ~/.mailmap
-
+        file = ~/.mailmap
 [blame]
 	date = format:%Y-%m-%d
-
+[diff]
+        submodule = log
+[commit]
+        verbose = 1
 [log]
 	date = iso8601
 [color "diff-highlight"]
