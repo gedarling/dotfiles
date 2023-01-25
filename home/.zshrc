@@ -37,3 +37,5 @@ export TERM=xterm-256color
 
 # flutter
 export PATH="$HOME/code/flutter/bin:$PATH"
+
+alias saw="docker run --rm -it -v ~/.aws:/home/.aws tbrock/saw:v0.2.2"
