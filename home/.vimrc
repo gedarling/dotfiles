@@ -58,17 +58,28 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-set guifont=Inconsolata-g\ for\ Powerline\ 10
+set guifont=Inconsolata-g\ for\ Powerline:h10
 set guioptions-=T
 set guioptions-=r
 
 set undofile
 
+if !has('nvim')
 "local undo directory
 set undodir^=~/.vim/undo
 
 "local swap directory
 set directory=~/.vim/swap
+endif
+
+if has('nvim')
+"local undo directory
+set undodir^=~/.vim/nvim-undo
+
+"local swap directory
+set directory=~/.vim/nvim-swap
+set mouse=a
+endif
 
 "tab settings
 set expandtab
