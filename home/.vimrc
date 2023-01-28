@@ -1,26 +1,35 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'tpope/vim-sensible'
+Plug 'tomtom/tcomment_vim'
+Plug 'kaicataldo/material.vim'
+Plug 'wesQ3/vim-windowswap'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/syntastic'
+Plug 'vim-perl/vim-perl'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'hashivim/vim-terraform'
+Plug 'rbong/vim-flog'
 
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-vividchalk'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'kaicataldo/material.vim'
-Plugin 'wesQ3/vim-windowswap'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/syntastic'
-Plugin 'vim-perl/vim-perl'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'hashivim/vim-terraform'
-
-filetype plugin indent on     " required!
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
+" You can revert the settings after the call like so:
+"   filetype indent off   " Disable file-type-specific indentation
+"   syntax off            " Disable syntax highlighting
 
 "file rifling
 function! DirCtrlP()
